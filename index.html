@@ -33,19 +33,14 @@
         }
 
         img {
-            max-width: 100%;
-            height: auto;
-            display: block;
-            margin: 0 auto;
+            max-width: 100%; /* Membuat gambar responsif */
+            height: auto; /* Menjaga aspek rasio */
+            display: block; /* Menghilangkan spasi tambahan */
+            margin: 0 auto; /* Pusatkan gambar */
         }
 
         p {
             line-height: 1.5;
-        }
-
-        audio {
-            width: 50%;
-            margin-top: 20px;
         }
     </style>
 </head>
@@ -58,23 +53,6 @@
         <br><br><br>
 
         <p>- hooh -</p>
-
-        <!-- Elemen audio untuk pemutaran suara otomatis dengan volume maksimal -->
-        <audio controls autoplay>
-            <source src="assets/audio.mp3" type="audio/mp3">
-            Your browser does not support the audio tag.
-        </audio>
-
-        <script>
-            // Fungsi untuk menetapkan volume maksimal
-            function setVolumeMax() {
-                var audio = document.getElementById('audioPlayer');
-                audio.volume = 1.0; // Volume antara 0.0 hingga 1.0
-            }
-
-            // Panggil fungsi setVolumeMax saat halaman dimuat
-            window.onload = setVolumeMax;
-        </script>
     </div>
 </body>
 
